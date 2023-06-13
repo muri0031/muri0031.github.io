@@ -1,0 +1,101 @@
+/* Selectors */
+
+/* Element selector
+- Select all the tags of the same type */
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+
+}
+
+/* Targeting multiple elements
+- If you’d like to style more than one element the same way you can use a comma to separate the tag names. */
+header,footer{
+  background-color: pink;
+}
+
+
+/* Some elements have default styling applied in the browser that you have to consider. The p element has margin top and bottom. */
+
+
+/* comment */
+/* . Class selector
+- Select an element that has a class */
+.site-title{
+ color: rgb(247, 24, 172);
+}
+
+/* # ID selector
+- Select an element that has has the ID - remember you can only have one unique ID per page */
+#my-image{
+  box-shadow: 0px 0px 2px 1px black;
+  
+}
+
+
+/* + Adjacent sibling
+- Select an element immediately beside another element */
+
+
+
+
+
+/* Element selector
+- Affecting multiple h2 on the page */
+
+ 
+
+/* > Child selector 
+- Select an element directly inside another element */
+
+
+
+
+
+/* [] Attribute
+- Select an element by it’s attribute. */
+
+
+
+/* Pseudo classes */
+
+/* :nth-child()
+- Select an element by it’s number OR odd/even. */
+ol:nth-child(odd){
+  background: rgb(119, 171, 255);
+}
+
+
+/* :last-child
+- Select the element when it’s the last inside its parent. */
+
+
+/* :first-of-type
+- Select an element that’s the first of its kind within its parent. */
+ol.hobbies{
+  list-style-type: square;
+}
+ul.nav{
+  list-style-type: none;
+}
+
+
+
+/* Removing bullets and changing bullet type */
+
+
+
+/* Change link styling */
+nav a{
+  background-color: rgb(241, 225, 233);
+  color: black;
+  border: 2px dotted rgb(251, 1, 155);
+text-decoration: none;
+}
+nav a:hover{
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+} 
+  
+ 
