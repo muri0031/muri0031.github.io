@@ -71,7 +71,7 @@ h2, h3{
 /* Navegation */
 
 header{
-  background-color: #222222;
+  background-color: #222;
 }
 
 /* Logo */
@@ -86,7 +86,7 @@ nav ul a{
   align-items: center;
   gap: 10px;
   font-size:18pt ;
-  color: #BE8D31;
+  color: #c78c06;
   list-style: none;
   height: 60px;
   padding-top: 20px;
@@ -94,11 +94,11 @@ nav ul a{
 
 header a:link,
 header a:visited {
-  color: #BE8D31;
+  color: #c78c06;
   text-decoration: none; }
 
 header nav ul a:hover{
-  color:black;
+  color:#222;
   background-color: #BE8D31;
   width: 100%;
 }
@@ -122,14 +122,14 @@ header nav ul a:hover{
 /* magnifying glass */
 .search-container button {
   background: none;
-  border: 1px solid #BE8D31 ;
-  color: #BE8D31;
+  border: 1px solid #c78c06 ;
+  color: #c78c06;
   margin-bottom: 20px;
 }
   .search-container button:focus,
   .search-container button:hover {
-    background-color: #BE8D31;
-    color: #222222;
+    background-color: #c78c06;
+    color: #222;
 }
    
 
@@ -147,7 +147,6 @@ header nav ul a:hover{
 
  .connect{
     color: white;
-  
 } 
   /* Background color */
 .overlay {
@@ -176,8 +175,8 @@ header nav ul a:hover{
 
 /* button */
 .connect .btn{
-  background-color: #BE8D31;
-  color: #0d0d0d;
+  background-color: #c78c06;
+  color: #222;
   margin-left: 10px;
   padding-left: 10px;
   text-decoration: none;
@@ -194,7 +193,7 @@ header nav ul a:hover{
 }
 
 .connect .btn:hover{
-  background-color: #222222;
+  background-color: #222;
   color: white;
 } 
 
@@ -234,6 +233,7 @@ header nav ul a:hover{
 /* Services */
 #services{
  padding-top: 30px; 
+ max-width: 1200px;
 }
   
 #services h2{
@@ -250,7 +250,7 @@ header nav ul a:hover{
 }
 
 .services-grid .box{
-  background-color: #FBE7B3;
+  background-color: #ffe6ac;
 }
   
   /* button */
@@ -261,7 +261,7 @@ header nav ul a:hover{
 }
 
 .services-grid .btn:hover{
-  background-color: #BE8D31;
+  background-color: #c78c06;
 } 
   
 .box img{
@@ -286,7 +286,7 @@ header nav ul a:hover{
 
 .services-grid .btn{
   color: white;
-  background-color: #222222;
+  background-color: #222;
   font-size: 17px;
   border: none;
   text-align: center;
@@ -326,16 +326,16 @@ header nav ul a:hover{
 
 .vision p{
   padding-left: 15px;
-  padding-right: 10px;
   line-height: 1.5em;
   font-size: 12px;
+  
 }
 
 .vision .btn{
   color: white;
-  background-color: #132944;
+  background-color: #172C46;
   font-size: 17px;
-  border: solid #BE8D31 1px;
+  border: solid #c78c06 1px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -350,12 +350,13 @@ header nav ul a:hover{
   }
 
 .vision .btn:hover{
-  background-color: #BE8D31;
+  background-color: #c78c06;
 } 
 
   /* Our Team */
 #team{
   margin-top: 30px;
+  max-width: 1200px;
 }
 
 #team h2{
@@ -388,7 +389,7 @@ header nav ul a:hover{
 }
 
 hr{
-  border: 1px solid #BE8D31;
+  border: 1px solid #c78c06;
   padding-left: 15px;
 }
 
@@ -411,6 +412,7 @@ hr{
   margin-top: 50px;
   margin-left: 10px;
   font-size: 25pt;
+  max-width: 1200px;
 }
   
 .contact-grid{
@@ -455,8 +457,8 @@ form #message{
 }
 
 form .button{
-  color:#BE8D31 ;
-  background-color: #222222;
+  color:#c78c06;
+  background-color: #222;
   border: none;
   font-size: 12pt;
   padding-left: 5px;
@@ -467,14 +469,14 @@ form .button{
 }
 
 form .button:hover{
-  background-color: #BE8D31;
+  background-color: #c78c06;
   color: white;
 } 
 
 /* Ours of Operation */
 .content-table{
   border-collapse: collapse;
-  border:1px solid #0d0d0d; 
+  border:1px solid #222; 
   font-size: 10pt;
   margin-left: 10px;
   margin-right: 15px;
@@ -482,12 +484,12 @@ form .button:hover{
  }
 
  .content-table thead tr { 
-  background-color: #FBE7B3;
+  background-color: #ffe6ac;
   height: 35px; 
   }
 
 .content-table th{
-  border: 1px solid #0d0d0d;
+  border: 1px solid #222;
   vertical-align:middle;
 }
 
@@ -509,8 +511,8 @@ iframe{
 }
   
 footer{
-  background-color: #222222;
-  color: #BE8D31;
+  background-color: #222;
+  color: #c78c06;
   padding-top: 20px;
   padding-bottom: 10px;
   padding-left: 15px;
@@ -527,7 +529,7 @@ footer p{
 
    /* Desktop Mockup starts here */
 
-   @media screen and (min-width:950px){
+   @media screen and (min-width:760px){
 
   /* Navegation */
   
@@ -708,7 +710,7 @@ grid-column: 1 / 3;
   grid-template-rows: repeat(2, 350px);
   margin-left: 200px;
   margin-right: 250px;
-  background-color: #FBE7B3;
+  background-color: #ffe6ac;
   gap: 0; 
 }
 
