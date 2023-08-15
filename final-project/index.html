@@ -11,36 +11,39 @@
     <!-- Header with all the nav part-->
     <header>
      
-        <div class="nav">
-            <img src="images/logo.png" alt="">
+        <div class="wrapper">
+            <img src="images/logo.png" alt="logo">
         
           <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#story">About us</a></li>
-                <li><a href="#info">Services</a></li>
-                <li><a href="#info">Team</a></li>
-                <li><a href="#info">Contact</a></li>
-                <li><a href="#info">Services</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Services</a></li>
+                <input type="text" placeholder="Search.." name="search">
             </ul>
           </nav>
         </div>
     </header>
             
-    <div class="conteiner">
+    <section>
+        <div class="conteiner">
                     
          <h1>Welcome to Three Star Media</h1>
          <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
          </p>
-         <img src="images/main-banner.jpg" alt="">
-    </div>     
+         <img src="images/main-banner.jpg" alt="main-banner">
+        </div> 
+    </section>    
                     
 
     <main>
         <!--Unique content for the page:about us,our services, our vision, our team,contact us  -->
-        <section>
-             <div> 
+        <section id="about-us">
+             <div class="wrapper intro-grid"> 
                 <h2>About Us</h2>
 
                  <p>
@@ -52,10 +55,10 @@
          </section>
          <!--All the content is divided into parts (articles & div)-->
         <section>
-            <div>
+            <div class="wrapper">
                 <h2> Our Services</h2>   
              
-                <div>
+                <div class="services-grid">
                     <article>
                         <img src="images/digital.jpg" alt="digital">
                         <h3> Digital transformation</h3>
@@ -95,8 +98,8 @@
             </div> <!--End of second part-->
          </section>
 
-         <section>
-            <div>
+         <section id="vision" class="pad-tb">
+            <div class="wrapper">
                 <article>
                     <img src="images/vision.jpg" alt="vision">
                     <h3>Our vision</h3>
@@ -106,8 +109,8 @@
             </div>
          </section>
 
-         <section>
-            <div>
+         <section id="team">
+            <div class="wrapper">
                 <h2>Our Team</h2>
             <div>
                 <h3>John Doe</h3>
@@ -168,8 +171,8 @@
         </section>
     </main>
 
-    <footer>
-        <div>
+    <footer class="bg-black">
+        <div class="wrapper">
          <p> <small>&copy;Copyright Three Star Media, 2020</small></p>
          <p> <small>All images are taken from Unsplash</small></p>
        </div>
