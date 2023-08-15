@@ -4,141 +4,196 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Project</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" 
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans"/>
 </head>
 <body>
-
+ <div class="conteiner">
     <!-- Header with all the nav part-->
     <header>
-     
-        <div class="wrapper">
-            <img src="images/logo.png" alt="logo">
         
-          <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Services</a></li>
-                <input type="text" placeholder="Search.." name="search">
-            </ul>
-          </nav>
+        <div class="wrapper">  
+            <div class="image-wrapper">
+                <img src="images/logo.png" alt="logo" id="logo">
+            </div>
+             <nav>
+                 <ul>
+                 <li><a href="#">Home</a></li>
+                 <li><a href="#">About Us</a></li>
+                 <li><a href="#">Services</a></li>
+                 <li><a href="#">Team</a></li>
+                 <li><a href="#">Contact</a></li>
+                 </ul>
+             </nav>
+             <div class="search-container">
+                <form action="search">
+                    <input type="text" placeholder="Search" name="search" class="search">
+                <button type="submit">  
+                         <span class="material-symbols-outlined"> search </span>
+                </button>   
+                </form>
+             </div> 
         </div>
     </header>
+
+    <!--Welcome to three Start Media-->        
+    <section id="welcome">
+        <div class="connect">  
+            <div class="overlay">
+                <h1>Welcome to Three Star Media</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a class="btn" href="#">Connect with us 
+                    <span class="material-symbols-outlined">
+                    arrow_right
+                    </span> 
+                </a>
+            </div>     
             
-    <section>
-        <div class="conteiner">
-                    
-         <h1>Welcome to Three Star Media</h1>
-         <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-         </p>
-         <img src="images/main-banner.jpg" alt="main-banner">
         </div> 
     </section>    
                     
 
     <main>
         <!--Unique content for the page:about us,our services, our vision, our team,contact us  -->
-        <section id="about-us">
-             <div class="wrapper intro-grid"> 
-                <h2>About Us</h2>
 
-                 <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                 </p>
-                <p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                 <img src="images/about-us.jpg" alt="about-us">
+        <!--About Us-->
+        <section id="allcontent">
+             <div class=about-us>
+                <div>
+                    <img src="images/about-us.jpg" alt="about-us" id="about-image">
+                </div>
+                
+                <div> 
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaUt enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaUt enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                 </div>
             </div>
          </section>
+
          <!--All the content is divided into parts (articles & div)-->
-        <section>
-            <div class="wrapper">
+
+         <!--Services-->
+        <section id="services" class="bg-services">
                 <h2> Our Services</h2>   
              
                 <div class="services-grid">
-                    <article>
+                    
+                    <!--Digital Transformation-->
+                    <div class="box">
                         <img src="images/digital.jpg" alt="digital">
                         <h3> Digital transformation</h3>
-                        <p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>        
-                        <a class="btn" href="#">Digital Plans</a>
-                    </article>
+                        <p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>        
+                        <a class="btn" href="#">Digital Plans 
+                            <span class="material-symbols-outlined">
+                            arrow_right
+                            </span>
+                        </a>
+                     </div>
 
-            
-                    <article> 
+                    <!--Marketing-->
+                    <div class="box"> 
                         <img src="images/marketing.jpg" alt="marketing">
-                        <h3> Marketing</h3>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-                        <a class="btn" href="#">Marketing Plans</a>
-                    </article>
+                        <h3>Marketing</h3>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>   
+                        <a class="btn" href="#">Marketing Plans
+                            <span class="material-symbols-outlined">
+                                arrow_right
+                             </span>
+                        </a>
+                    </div>
 
-                    <article>
+                    <!--Video Production-->
+                    <div class="box">
                         <img src="images/video.jpg" alt="video">
                         <h3>Video Production</h3>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</P>
-                        <a class="btn" href="#">Video Plans</a>        
-                    </article>
+                        <p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>   
+                        <a class="btn" href="#">Video Plans
+                            <span class="material-symbols-outlined">
+                                arrow_right
+                             </span>
+                        </a>        
+                    </div>
 
-                    <article> 
+                    <!--Web Development-->
+                    <div class="box"> 
                         <img src="images/web.jpg" alt="web">  
                         <h3>Web Development</h3>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
-                        <a class="btn" href="#">Web Plans</a>
-                    </article>
+                        <p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>   
+                        <a class="btn" href="#">Web Plans
+                            <span class="material-symbols-outlined">
+                                arrow_right
+                            </span>
+                        </a>
+                    </div>
         
-                    <article>
+                     <!--Print-->
+                    <div class="box">
                         <img src="images/print.jpg" alt="">
                         <h3>Print</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </p>
-                        <a class="btn" href="#">Print Plans</a>
-                    </article>
-                 </div>
+                        <p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>   
+                        <a class="btn" href="#">Print Plans
+                            <span class="material-symbols-outlined">
+                                arrow_right
+                            </span>
+                        </a>
+                    </div>
             </div> <!--End of second part-->
          </section>
 
+         <!--Vision-->
          <section id="vision" class="pad-tb">
-            <div class="wrapper">
-                <article>
-                    <img src="images/vision.jpg" alt="vision">
+            <div class="vision">
                     <h3>Our vision</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </p>
-                 <a class="btn" href="#">Learn More</a>
-                </article>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <a class="btn" href="#">Learn More <span class="material-symbols-outlined">
+                        arrow_right
+                        </span>
+                    </a>
             </div>
          </section>
 
+         <!--Our Team-->
          <section id="team">
-            <div class="wrapper">
                 <h2>Our Team</h2>
-            <div>
-                <h3>John Doe</h3>
-                <h4>CEO and Co-owner</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <img src="images/john.jpg" alt="john">
-            </div>
-
-            <div>
-                <h3>Bob Rite</h3>
-                <h4>CFO and Co-owner</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <img src="images/bob.jpg" alt="bob">
-            </div>
+            
+            <div class="team-grid">
+                <!--John img--> <!--nth child (1)-->
+                <div class="box">
+                    <img src="images/john.jpg" alt="john" id="img">
+                </div>
+                <div class="box"> <!--John text--> <!--nth:child (2)-->
+                     <h3>John Doe</h3>
+                     <h4>CEO and Co-owner</h4>
+                     <hr/>
+                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. </p> 
+                </div>
+                <!--Bob img--> <!--nth:child (3)-->
+                 <div class="box">
+                    <img src="images/bob.jpg" alt="bob" id="img2">
+                </div>
+                 <div class="box"> <!--Bob text--> <!--ntch child (4)-->
+                    <h3>Bob Rite</h3>
+                     <h4>CFO and Co-owner</h4>
+                     <hr/>
+                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  </p>
+                </div>
             </div>
         </section>
 
-        <section>
-            <div>
-                <h2>Contact Us</h2>
-                <div>
-                <h3>Send us a message</h3>
-
-                <article>
+        <!--Contact Us-->
+        <section id="contact"> <!--Divided intro 3 parts-->
+            <h2>Contact Us</h2> 
+            
+            <div class="contact-grid">
+                <!--Message--> <!--nth:child(1)-->
+                <div class="box">
+                    <h3>Send us a message</h3>
+                <form>
                      <p> <label for="name">Full Name</label></p>
                      <input id="name"  type="text"  name="Name"/>
 
@@ -148,34 +203,51 @@
                      <p><label for="message">Message</label></p>
                      <textarea id="message" name="message"></textarea>
 
-                     <p><button type="submit" class="button">SEND</button></p>
-                </article>
+                     <p><button type="submit" class="button">Send</button></p>
+                </form>
+                </div>
                 
-            
-                <article>
-                <h3>Location</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944455156962!2d-75.7549257!3d45.349933500000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1690753361534!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </article>
-                
-                 <article>
+                <!--Hours of Operation--> <!--ntch:child(2)-->
+                 <div class="box">
                      <h3>Hours of operation</h3>
-                     <p>Days</p>
-                     <p>Monday - Friday</p>
-                     <p>Saturday - Sunday</p>
-                     <p>Hours</p>
-                     <p>9 AM - 6 PM</p>
-                     <p>Closed</p>
-                </article>
-             </div>
+
+                    <!--Table schedule-->
+                     <table class="content-table"> 
+                        <thead> 
+                            <tr> 
+                                <th>Days</th> 
+                                <th>Hours</th> 
+                            </tr> 
+                        </thead> 
+                        
+                        <tbody> 
+                            <tr>     
+                                <td>Monday - Friday</td>
+                                 <td>9 AM - 6 PM</td> 
+                             </tr>
+                             <tr> 
+                                 <td>Saturday - Sunday</td> 
+                                 <td>Closed</td>  
+                            </tr> 
+                    </tbody>
+                 </table>
+                 </div>
+                 
+                 <!--Location--> <!--nth:child(3)-->
+                 <div class="box">
+                    <h3>Location</h3>
+                    <!--Map-->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944455156962!2d-75.7549257!3d45.349933500000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1690753361534!5m2!1sen!2sca"   style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
              </div>
         </section>
     </main>
 
-    <footer class="bg-black">
-        <div class="wrapper">
-         <p> <small>&copy;Copyright Three Star Media, 2020</small></p>
+    <footer  class="footer">
+       
+         <p> <small>&copy; Copyright Three Star Media, 2020</small></p>
          <p> <small>All images are taken from Unsplash</small></p>
-       </div>
     </footer>
+</div>
 </body>
 </html>
